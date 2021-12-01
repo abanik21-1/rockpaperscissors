@@ -5,3 +5,36 @@
   display: flex;
   justify-content: space-between;
 }
+
+html {
+  background-color: #6bbcff;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+}
+
+
+h4 {
+font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+    color: white;
+
+
+  
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  
+  
+
+
+}
