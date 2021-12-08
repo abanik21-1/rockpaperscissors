@@ -17,6 +17,48 @@ $(".play").click(function() {
 
 $(".play").click(function() {
     let computerChoiceTwo = Math.random();
-  computerChoiceTwo =
-    $(".computerChoice").text(`${computerChoiceTwo}`);
+  $(".computerChoice").text(`${computerChoiceTwo}`);
 });
+
+//[ ] Write a conditional statement which, given the number range of randomNumber, assigns ‘rock’, ‘paper’ or ‘scissors’ to a computerChoice variable
+// [ ] Update the computer choice location so it displays the computerChoice to the screen
+
+
+   
+let computerChoice = Math.random(); 
+let computerChoiceString;
+
+if () {
+  computerChoiceString = "rock";
+} else if () {
+  computerChoiceString = "paper";
+} else {
+   computerChoiceString = "scissor";
+}
+
+if (userChoice === "rock") {
+  if (computerChoiceString === "rock") {
+    //it's a tie
+  
+}
+
+    $(".play").click(function() {
+    let computerAnswer = Math.random();
+    console.log(userAnswer);
+  let rock = rock;
+    
+    
+      
+$(".play").click(function() {
+    let userAnswer = Math.random();
+    console.log(userAnswer);
+  let rock = ; 
+  let paper = ;
+  let scissor = ;
+  if (userAnswer === 1) {
+  }
+    
+  });
+  
+  
+  
