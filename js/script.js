@@ -25,40 +25,42 @@ $(".play").click(function() {
 
 
    
-let computerChoice = Math.random(); 
-let computerChoiceString;
+let randomNumber = 0;
 
-if () {
-  computerChoiceString = "rock";
-} else if () {
-  computerChoiceString = "paper";
-} else {
-   computerChoiceString = "scissor";
-}
+$(".play").click(function () {
+  let user = $("input").val();
+  $(".userChoice"). text(user);
+  let randomNumber = Math.ceil(Math.random() * 3)-1;
+  $(".computerChoice").text(choices [randomNumber]);
+  
+});
 
-if (userChoice === "rock") {
-  if (computerChoiceString === "rock") {
-    //it's a tie
-  
-}
+let choices = ["rock", "paper", "scissors"];
+console.log(choices [20]);
 
-    $(".play").click(function() {
-    let computerAnswer = Math.random();
-    console.log(userAnswer);
-  let rock = rock;
-    
-    
-      
-$(".play").click(function() {
-    let userAnswer = Math.random();
-    console.log(userAnswer);
-  let rock = ; 
-  let paper = ;
-  let scissor = ;
-  if (userAnswer === 1) {
-  }
-    
-  });
   
+  //  ] Write a compound conditional statement that compares the userChoice to the computerChoice
+//[ ] Declare a variable to save the winner of the game
+// [ ] Display the winner to the screen in the result div
+
   
+
+let winner = (userChoice, computerChoice);
+$(".result").html(winner);
+
+let winner; 
+
+if (
+  (userChoice === "rock" && computerChoice === "paper") ||
   
+(userChoice === "scissors" && computerChoice === "rock") ||
+  (userChoice === "paper" && computerChoice === "scissors")
+) {
+  winner = "Computer Wins!";
+  
+}else if (
+  
+
+
+
+});
