@@ -39,11 +39,15 @@ let choices = ["rock", "paper", "scissors"];
 console.log(choices [20]);
 
   
-  //  ] Write a compound conditional statement that compares the userChoice to the computerChoice
-//[ ] Declare a variable to save the winner of the game
-// [ ] Display the winner to the screen in the result div
+// Day 4 
 
+let result = "";
+if (choice === computerChoice) {
+  result = "Tie";
+} else if (choic
   
+
+
 
 let winner = (userChoice, computerChoice);
 $(".result").html(winner);
@@ -58,9 +62,11 @@ if (
 ) {
   winner = "Computer Wins!";
   
-}else if (
-  
+} else if (
+    
 
-
+  }
 
 });
+
+
