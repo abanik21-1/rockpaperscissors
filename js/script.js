@@ -1,72 +1,60 @@
-//Day 2 Goal 1: Generate a new random number every time the user clicks the button
-
-//[ ] Outside of your click handler, declare a randomNumber variable and set it equal to 0
-//[ ] In your click handler, generate a random number and assign it to the randomNumber variable
-
-//Day 2 Goal 2: Display the random number to the screen
-//[ ] Display the randomNumber value on the screen, in the computer choice location
-
+// Day 1 & 2: Random Numbers & conditional statement 
 $(".play").click(function() {
   let choice = $(".input").val();
   $(".userChoice").text(choice);
-});
-
-
-//Random Numbers 
-
-
-$(".play").click(function() {
-    let computerChoiceTwo = Math.random();
+  
+  //set up variables for later 
+  let computerChoiceTwo = Math.random();
   $(".computerChoice").text(`${computerChoiceTwo}`);
-});
-
-//[ ] Write a conditional statement which, given the number range of randomNumber, assigns ‘rock’, ‘paper’ or ‘scissors’ to a computerChoice variable
-// [ ] Update the computer choice location so it displays the computerChoice to the screen
-
-
-   
-let randomNumber = 0;
-
-$(".play").click(function () {
-  let user = $("input").val();
+  
+   let user = $("input").val();
   $(".userChoice"). text(user);
   let randomNumber = Math.ceil(Math.random() * 3)-1;
   $(".computerChoice").text(choices [randomNumber]);
-  
 });
 
+
+//Get computer choice 
 let choices = ["rock", "paper", "scissors"];
 console.log(choices [20]);
 
-  
-// Day 4 
+let computerChoice = "No choice";
+if (randomNumber <= 1) {
+  computerChoice = "Rock";
+} else if (randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = "Paper";
+} else {
+    computerChoice = "Scissors";
+
+
+// set computer choice 
+} $(".computerChoice").text(computerChoice);
+
+
+
+
+let rockW = choice === "Rock" && computerChoice === "Scissors";
+let paperW = choice === "Paper" && computerChoice === "Rock";
+let scissorsW = choice === "Scissors" && computerChoice === "Paper";
+let userW = rockW || paperW || scissorsW;
+
+
 
 let result = "";
 if (choice === computerChoice) {
   result = "Tie";
-} else if (choic
+} else if (userW) {
+  result = "You Win!!";
+} else {
+  result = "You lose. Try again!";
+}
   
 
+$(".result").text(result);             
+      
 
-
-let winner = (userChoice, computerChoice);
-$(".result").html(winner);
-
-let winner; 
-
-if (
-  (userChoice === "rock" && computerChoice === "paper") ||
-  
-(userChoice === "scissors" && computerChoice === "rock") ||
-  (userChoice === "paper" && computerChoice === "scissors")
-) {
-  winner = "Computer Wins!";
-  
-} else if (
-    
-
-  }
-
-});
-
+//Day 6: Parameter vs. Argument
+function chooseWinner () {
+  return 
+  });
 
